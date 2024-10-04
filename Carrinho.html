@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="css/Carrinho.css">
+</head>
+<body>
+    <header>
+        <img src="img\La Dolce Vita 120px.png" alt="Logo" class="logo">
+    </header>
+
+    <main>
+        <h1>Seu Carrinho</h1>
+
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="img\BrownieTrad.png" alt="Produto 1">
+                <div class="item-details">
+                    <h3>Brownie Tradicional 1</h3>
+                    <p>Preço: R$ 21,00</p>
+                    <p>Quantidade: 3</p>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="img\BrownieBlondie.png" alt="Produto 2">
+                <div class="item-details">
+                    <h3>Brownie Blondie 2</h3>
+                    <p>Preço: R$ 21,00</p>
+                    <p>Quantidade: 3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Resumo do Pedido</h2>
+            <p>Subtotal: R$ 42,00</p>
+            <p>Frete: R$ 10,00</p>
+            <p class="total">Total: R$ 52,00</p>
+        </div>
+
+        <form class="payment-options">
+            <h2>Opções de Pagamento</h2>
+            <div class="payment-method">
+                <input type="radio" id="pix" name="payment" value="pix" required>
+                <label for="pix"><i class="fas fa-qrcode"></i> PIX</label>
+            </div>
+            <div class="payment-method">
+                <input type="radio" id="card" name="payment" value="card" required>
+                <label for="card"><i class="far fa-credit-card"></i> Cartão de Crédito</label>
+            </div>
+            <div class="card-info">
+                <label for="card-number">Número do Cartão:</label>
+                <input type="text" id="card-number" placeholder="0000 0000 0000 0000">
+                <label for="card-name">Nome no Cartão:</label>
+                <input type="text" id="card-name" placeholder="Nome Completo">
+                <label for="card-expiry">Data de Validade:</label>
+                <input type="text" id="card-expiry" placeholder="MM/AA">
+                <label for="card-cvc">CVC:</label>
+                <input type="text" id="card-cvc" placeholder="123">
+            </div>
+            <button type="submit" class="checkout-button">Finalizar Compra</button>
+        </form>
+    </main>
+</body>
+</html>C

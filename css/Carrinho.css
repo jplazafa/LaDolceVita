@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão da página como Arial, com uma alternativa sans-serif */
+  margin: 0; /* Remove a margem padrão do body */
+  padding: 0; /* Remove o padding padrão do body */
+  background-color: #FFF0F5; /* Define a cor de fundo como rosa claro */
+  color: #3a2323; /* Define a cor do texto como marrom */
+}
+
+header {
+  background-color: #f78fb3; /* Define a cor de fundo do cabeçalho como rosa forte */
+  padding: 20px; /* Adiciona um espaçamento interno de 20px em todas as direções */
+  text-align: center; /* Centraliza o conteúdo do cabeçalho */
+}
+
+.logo {
+  max-width: 150px; /* Define a largura máxima da logo como 150px, evitando que fique muito grande */
+}
+
+main {
+  max-width: 800px; /* Define a largura máxima do conteúdo principal como 800px */
+  margin: 0 auto; /* Centraliza o main na página */
+  padding: 20px; /* Adiciona um espaçamento interno de 20px */
+}
+
+h1, h2 {
+  color: #3a2323; /* Define a cor dos títulos h1 e h2 como marrom */
+}
+
+.cart-items {
+  background-color: white; /* Define a cor de fundo da seção de itens do carrinho como branca */
+  border-radius: 8px; /* Arredonda os cantos da seção do carrinho */
+  padding: 20px; /* Adiciona um espaçamento interno de 20px */
+  margin-bottom: 20px; /* Adiciona um espaçamento externo de 20px na parte inferior */
+}
+
+.cart-item {
+  display: flex; /* Utiliza flexbox para alinhar os itens em linha */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  margin-bottom: 15px; /* Adiciona um espaçamento externo de 15px na parte inferior de cada item */
+  border-bottom: 1px solid #FFC0CB; /* Adiciona uma borda na parte inferior do item com cor rosa claro */
+  padding-bottom: 15px; /* Adiciona um espaçamento interno na parte inferior de 15px */
+}
+
+.cart-item:last-child {
+  border-bottom: none; /* Remove a borda do último item */
+  margin-bottom: 0; /* Remove o espaçamento inferior do último item */
+  padding-bottom: 0; /* Remove o espaçamento interno inferior do último item */
+}
+
+.cart-item img {
+  width: 80px; /* Define a largura da imagem do item como 80px */
+  height: 80px; /* Define a altura da imagem do item como 80px */
+  object-fit: cover; /* Garante que a imagem cubra o espaço disponível, cortando se necessário */
+  margin-right: 15px; /* Adiciona um espaçamento à direita da imagem */
+}
+
+.item-details {
+  flex-grow: 1; /* Faz com que os detalhes do item ocupem o espaço restante no flexbox */
+}
+
+.cart-summary {
+  background-color: white; /* Define a cor de fundo da seção de resumo do carrinho como branca */
+  border-radius: 8px; /* Arredonda os cantos da seção de resumo */
+  padding: 20px; /* Adiciona um espaçamento interno de 20px */
+  margin-bottom: 20px; /* Adiciona um espaçamento externo de 20px na parte inferior */
+}
+
+.total {
+  font-weight: bold; /* Define o texto como negrito */
+  font-size: 1.2em; /* Aumenta o tamanho da fonte em 20% */
+}
+
+.payment-options {
+  background-color: white; /* Define a cor de fundo da seção de opções de pagamento como branca */
+  border-radius: 8px; /* Arredonda os cantos da seção de opções de pagamento */
+  padding: 20px; /* Adiciona um espaçamento interno de 20px */
+  margin-bottom: 20px; /* Adiciona um espaçamento externo de 20px na parte inferior */
+}
+
+.payment-method {
+  margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10px nas opções de pagamento */
+}
+
+.checkout-button {
+  background-color: #FF69B4; /* Define a cor de fundo do botão de checkout como rosa forte */
+  color: white; /* Define a cor do texto do botão como branca */
+  border: none; /* Remove a borda padrão do botão */
+  padding: 15px 30px; /* Adiciona um espaçamento interno de 15px vertical e 30px horizontal */
+  font-size: 1.1em; /* Aumenta o tamanho da fonte em 10% */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  cursor: pointer; /* Altera o cursor para pointer ao passar sobre o botão */
+  width: 100%; /* Faz com que o botão ocupe 100% da largura disponível */
+  margin-top: 20px; /* Adiciona um espaçamento externo superior de 20px */
+}
+
+.checkout-button:hover {
+  background-color: #FF1493; /* Muda a cor de fundo do botão para um rosa mais escuro ao passar o mouse */
+}
+
+/* Formulário de pagamento */
+form label {
+  display: block; /* Faz com que os rótulos (labels) ocupem uma linha inteira */
+  margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10px nos rótulos */
+  color: #3a2323; /* Define a cor dos rótulos como marrom */
+}
+
+input[type="text"], input[type="radio"] {
+  width: 100%; /* Define que os campos de texto e os botões de rádio ocupem 100% da largura */
+  padding: 10px; /* Adiciona um espaçamento interno de 10px */
+  margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10px */
+  border: 2px solid #3a2323; /* Adiciona uma borda de 2px de espessura, marrom */
+  border-radius: 5px; /* Arredonda os cantos dos campos de entrada */
+}
+
+input[type="radio"] {
+  width: auto; /* Define que os botões de rádio não ocupem 100% da largura, permitindo que fiquem menores */
+}

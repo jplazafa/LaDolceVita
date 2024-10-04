@@ -1,0 +1,223 @@
+/* Certificar que o body e o html ocupem toda a altura da página e evitar barra de rolagem horizontal */
+html, body {
+    height: 100%; /* Define a altura do HTML e do body como 100% da altura da viewport */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial, com uma alternativa sans-serif */
+    background-color: #ffe8f0; /* Define a cor de fundo do body como um rosa claro */
+    overflow-x: hidden; /* Evita a rolagem horizontal */
+    display: flex; /* Usa flexbox para layout do body */
+    flex-direction: column; /* Organiza os filhos do body em uma coluna */
+}
+
+/* Header */
+header {
+    background-color: #f78fb3; /* Define a cor de fundo do cabeçalho como rosa */
+    padding: 10px; /* Adiciona espaçamento interno de 10px ao cabeçalho */
+    display: flex; /* Usa flexbox para organizar os itens do cabeçalho */
+    justify-content: space-between; /* Distribui os itens ao longo do eixo principal */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+/* Logo centralizado */
+.card {
+    display: grid; /* Usa grid layout para o logo */
+    justify-content: center; /* Centraliza o logo horizontalmente */
+    align-items: center; /* Centraliza o logo verticalmente */
+    width: 120px; /* Define a largura do logo */
+    height: 120px; /* Define a altura do logo */
+}
+
+/* Estilos para os ícones no canto superior direito */
+.header-icons {
+    display: flex; /* Usa flexbox para organizar os ícones em linha */
+    gap: 15px; /* Espaçamento entre os ícones */
+    margin-right: 20px; /* Distância do lado direito */
+}
+
+.header-icons img {
+    width: 30px; /* Define o tamanho dos ícones */
+    height: auto; /* Mantém a proporção dos ícones */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #3a2323; /* Define a cor de fundo do menu como marrom escuro */
+    width: 100%; /* Faz com que o menu ocupe 100% da largura da tela */
+}
+
+.menu {
+    display: flex; /* Usa flexbox para organizar os itens do menu em linha */
+    justify-content: center; /* Centraliza os itens do menu horizontalmente */
+    list-style-type: none; /* Remove as bolinhas da lista */
+    margin: 0; /* Remove a margem padrão do menu */
+    padding: 10px; /* Adiciona padding de 10px ao menu */
+}
+
+.menu li {
+    margin: 0 15px; /* Adiciona espaçamento de 15px nas laterais de cada item do menu */
+}
+
+/* Define o estilo dos links no menu */
+.menu li a {
+    color: white; /* Define a cor do texto dos links como branca */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Define o texto dos links como negrito */
+}
+
+/* Muda a cor do link ao passar o mouse */
+.menu li a:hover {
+    color: #f57fe5; /* Muda a cor do texto do link para rosa ao passar o mouse */
+}
+
+/* Estilos para a lista suspensa do menu */
+.menu ul {
+    list-style: none; /* Remove as bolinhas da lista suspensa */
+    padding: 0; /* Remove o padding padrão da lista suspensa */
+    margin: 0; /* Remove a margem padrão da lista suspensa */
+    display: none; /* Esconde a lista suspensa por padrão */
+    background-color: #f9f9f9; /* Define a cor de fundo da lista suspensa como um cinza claro */
+    min-width: 160px; /* Define uma largura mínima para a lista suspensa */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra à lista suspensa */
+}
+
+/* Estilos para os itens da lista suspensa */
+.menu ul li {
+    margin: 0; /* Remove a margem dos itens da lista suspensa */
+}
+
+/* Define o estilo dos links na lista suspensa */
+.menu ul li a {
+    display: block; /* Faz com que os links ocupem toda a largura do item da lista suspensa */
+    padding: 10px; /* Adiciona padding de 10px aos links da lista suspensa */
+    color: black; /* Define a cor do texto dos links da lista suspensa como preto */
+}
+
+/* Exibe a lista suspensa ao passar o mouse sobre o item do menu */
+.menu > li:hover ul {
+    display: block; /* Exibe a lista suspensa ao passar o mouse sobre o item do menu */
+}
+
+/* Muda a cor de fundo do link na lista suspensa ao passar o mouse */
+.menu ul li a:hover {
+    background-color: #ddd; /* Muda a cor de fundo do link na lista suspensa ao passar o mouse */
+}
+
+/* Container principal */
+.container {
+    display: flex; /* Usa flexbox para organizar os itens dentro do container */
+    justify-content: space-between; /* Distribui os itens ao longo do eixo principal */
+    margin: 0; /* Remove a margem do container */
+    padding: 0; /* Remove o padding do container */
+    flex: 1; /* Faz o container ocupar o espaço restante */
+}
+
+/* Faixas laterais */
+.sidebar {
+    background-color: #f78fb3; /* Define a cor de fundo da barra lateral como rosa */
+    width: 250px; /* Define a largura da barra lateral */
+    height: 100%; /* A altura ajusta conforme o conteúdo */
+    display: flex; /* Usa flexbox para organizar os itens dentro da barra lateral */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+/* Seção de produtos */
+.products {
+    display: grid; /* Usa grid layout para a seção de produtos */
+    grid-template-columns: repeat(2, 1fr); /* Define 2 produtos por linha com colunas iguais */
+    gap: 20px; /* Espaçamento entre os produtos */
+    margin: 20px auto; /* Centraliza a seção de produtos */
+    width: 80%; /* Define uma largura máxima para a seção */
+    max-width: 100%; /* Garante que a seção não ultrapasse a largura da página */
+    box-sizing: border-box; /* Garante que padding e border não causem estouro */
+}
+
+/* Estilo do título da seção de produtos */
+.products h3 {
+    grid-column: 1 / -1; /* O título ocupa toda a largura da grid */
+    text-align: center; /* Centraliza o texto do título */
+    font-size: 2em; /* Tamanho da fonte do título */
+    color: #3a2323; /* Cor personalizada */
+    margin-bottom: 20px; /* Espaço entre o título e os produtos */
+    font-weight: 1000; /* Define o peso da fonte como muito grosso */
+}
+
+/* Estilo dos produtos */
+.product {
+    background-color: #ffd1e2; /* Cor de fundo do produto */
+    padding: 20px; /* Adiciona padding ao produto */
+    text-align: center; /* Centraliza o texto dentro do produto */
+    border-radius: 10px; /* Arredonda os cantos do produto */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao produto */
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.product img {
+    width: 100%; /* A imagem usa 100% da largura do contêiner */
+    max-width: 300px; /* Limita a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Arredonda os cantos da imagem */
+}
+
+/* Estilo do título do produto */
+.product h1 {
+    font-weight: bold; /* Define o texto como negrito */
+    font-size: 20px; /* Tamanho da fonte do título do produto */
+    color: #3a2323; /* Cor do texto do título */
+    margin: 15px 0; /* Espaço entre a imagem e o texto do título */
+}
+
+/* Estilo do preço do produto */
+.product h2 {
+    font-weight: bold; /* Define o texto como negrito */
+    font-size: 22px; /* Tamanho da fonte do preço */
+    color: #050505; /* Cor do preço */
+    margin: 15px 0; /* Espaço entre a imagem e o texto do preço */
+}
+
+/* Botões dos produtos */
+.product-buttons {
+    display: flex; /* Usa flexbox para os botões */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 10px; /* Espaço entre o texto e os botões */
+}
+
+/* Estilo do botão de adicionar ao carrinho */
+.add-to-cart {
+    padding: 10px 15px; /* Adiciona padding ao botão */
+    background-color: #f39c12; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão como branco */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+/* Efeito de hover para os botões */
+.buy-now:hover, .add-to-cart:hover {
+    opacity: 0.8; /* Efeito de opacidade ao passar o mouse sobre os botões */
+}
+
+/* Estilo para o rodapé */
+.footer {
+    background-color: #702b5f; /* Cor do fundo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona espaçamento interno ao rodapé */
+    width: 100%; /* Faz com que o rodapé ocupe 100% da largura da tela */
+    font-size: 14px; /* Tamanho do texto do rodapé */
+    flex-shrink: 0; /* Impede que o rodapé encolha */
+}
+
+/* Estilos para o texto de copyright no rodapé */
+.footer__copyrightText {
+    margin: 0; /* Remove margens desnecessárias */
+    padding: 0; /* Remove padding desnecessário */
+}
+
+.footer__copyrightText .content-asset {
+    margin-top: 10px; /* Espaçamento superior para o texto de copyright */
+}

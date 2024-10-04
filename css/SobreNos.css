@@ -1,0 +1,94 @@
+body {
+  background-color: #ffd1e2; /* Define a cor de fundo do body como rosa claro */
+  font-family: Arial, sans-serif; /* Define a fonte padrão como Arial, com uma alternativa sans-serif */
+  margin: 0; /* Remove a margem padrão do body */
+  padding: 0; /* Remove o padding padrão do body */
+  display: flex; /* Usa flexbox para layout do body */
+  flex-direction: column; /* Organiza os filhos do body em uma coluna */
+  align-items: center; /* Centraliza os itens horizontalmente no body */
+}
+.center {
+  background-color: #f78fb3; /* Define a cor de fundo da área da logo como rosa forte */
+  width: 100%; /* Faz com que a logo-container ocupe 100% da largura da tela */
+  display: flex; /* Usa flexbox para organizar o conteúdo dentro da logo-container */
+  justify-content: center; /* Centraliza o conteúdo da logo-container horizontalmente */
+  padding: 20px 0; /* Adiciona espaçamento interno de 20px em cima e embaixo */
+}
+header h1 {
+  color: #ffffff; /* Define a cor do texto do cabeçalho como branca */
+}
+
+header {
+  background-color: #f78fb3; /* Define a cor de fundo do cabeçalho como rosa */
+  padding: 5px; /* Adiciona espaçamento interno de 5px ao cabeçalho */
+  display: flex; /* Usa flexbox para organizar os itens do cabeçalho */
+  justify-content: space-between; /* Distribui os itens ao longo do eixo principal */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+/* Menu de navegação */
+nav {
+  background-color: #3a2323; /* Define a cor de fundo do menu como marrom escuro */
+  width: 100%; /* Faz com que o menu ocupe 100% da largura da tela */
+}
+
+.menu {
+  display: flex; /* Usa flexbox para organizar os itens do menu em linha */
+  justify-content: center; /* Centraliza os itens do menu horizontalmente */
+  list-style-type: none; /* Remove as bolinhas da lista */
+  margin: 0; /* Remove a margem padrão do menu */
+  padding: 10px; /* Adiciona padding de 10px ao menu */
+}
+
+.menu li {
+  margin: 0 15px; /* Adiciona espaçamento de 15px nas laterais de cada item do menu */
+}
+
+/* Define o estilo dos links no menu */
+.menu li a {
+  color: white; /* Define a cor do texto dos links como branca */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold; /* Define o texto dos links como negrito */
+}
+
+/* Muda a cor do link ao passar o mouse */
+.menu li a:hover {
+  color: #f57fe5; /* Muda a cor do texto do link para rosa ao passar o mouse */
+}
+
+/* Estilos para a lista suspensa do menu */
+.menu ul {
+  list-style: none; /* Remove as bolinhas da lista suspensa */
+  padding: 0; /* Remove o padding padrão da lista suspensa */
+  margin: 0; /* Remove a margem padrão da lista suspensa */
+  display: none; /* Esconde a lista suspensa por padrão */
+  background-color: #f9f9f9; /* Define a cor de fundo da lista suspensa como um cinza claro */
+  min-width: 160px; /* Define uma largura mínima para a lista suspensa */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra à lista suspensa */
+}
+
+/* Estilos para os itens da lista suspensa */
+.menu ul li {
+  margin: 0; /* Remove a margem dos itens da lista suspensa */
+}
+
+/* Define o estilo dos links na lista suspensa */
+.menu ul li a {
+  display: block; /* Faz com que os links ocupem toda a largura do item da lista suspensa */
+  padding: 10px; /* Adiciona padding de 10px aos links da lista suspensa */
+  color: black; /* Define a cor do texto dos links da lista suspensa como preto */
+}
+
+/* Exibe a lista suspensa ao passar o mouse sobre o item do menu */
+.menu > li:hover ul {
+  display: block; /* Exibe a lista suspensa ao passar o mouse sobre o item do menu */
+}
+
+/* Muda a cor de fundo do link na lista suspensa ao passar o mouse */
+.menu ul li a:hover {
+  background-color: #ddd; /* Muda a cor de fundo do link na lista suspensa ao passar o mouse */
+}
+
+.sobre {
+  padding: 15px;
+}

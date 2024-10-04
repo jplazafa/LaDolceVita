@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão como Arial, com uma alternativa sans-serif */
+  display: flex; /* Usa flexbox para layout do body */
+  flex-direction: column; /* Empilha os elementos em uma coluna */
+  justify-content: center; /* Centraliza verticalmente o conteúdo do body */
+  align-items: center; /* Centraliza horizontalmente o conteúdo do body */
+  height: 100vh; /* Define a altura do body para ocupar 100% da altura da viewport */
+  background-color: #f78fb3; /* Define a cor de fundo do body como rosa forte */
+  margin: 0; /* Remove a margem padrão do body */
+}
+
+.image-container {
+  text-align: center; /* Centraliza o conteúdo da imagem */
+  margin-bottom: 20px; /* Espaçamento entre a imagem e o contêiner de login */
+}
+
+.login-image {
+  width: 300px; /* Define a largura da imagem */
+  max-width: 300px; /* Define a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.login-container {
+  background-color: #ffd1e2; /* Define a cor de fundo do contêiner de login como rosa claro */
+  padding: 20px; /* Adiciona espaçamento interno ao contêiner de login */
+  border-radius: 5px; /* Arredonda os cantos do contêiner de login */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao contêiner de login */
+  width: 300px; /* Define a largura do contêiner de login */
+}
+
+h2 {
+  text-align: center; /* Centraliza o texto do cabeçalho */
+}
+
+label, input {
+  display: block; /* Faz com que rótulos e entradas ocupem uma linha inteira */
+  width: 100%; /* Faz com que rótulos e entradas ocupem 100% da largura disponível */
+  margin-bottom: 10px; /* Adiciona um espaço inferior de 10px */
+}
+
+button {
+  width: 100%; /* Faz com que o botão ocupe 100% da largura disponível */
+  padding: 10px; /* Adiciona padding de 10px ao botão */
+  background-color: #3a2323; /* Define a cor de fundo do botão como marrom */
+  color: white; /* Define a cor do texto do botão como branca */
+  border: none; /* Remove a borda padrão do botão */
+  border-radius: 5px; /* Arredonda os cantos do botão */
+  cursor: pointer; /* Altera o cursor para pointer ao passar sobre o botão */
+}
+
+button:hover {
+  background-color: #3a2323; /* Mantém a cor do botão ao passar o mouse */
+}
+
+p {
+  text-align: center; /* Centraliza o texto do parágrafo */
+  color: red; /* Define a cor do texto como vermelho */
+}
+
+/* Menu de navegação */
+nav {
+  background-color: #3a2323; /* Define a cor de fundo do menu como marrom escuro */
+  width: 100%; /* Faz com que o menu ocupe 100% da largura da tela */
+}
+
+.menu {
+  display: flex; /* Usa flexbox para organizar os itens do menu em linha */
+  justify-content: center; /* Centraliza os itens do menu horizontalmente */
+  list-style-type: none; /* Remove as bolinhas da lista */
+  margin: 0; /* Remove a margem padrão do menu */
+  padding: 10px; /* Adiciona padding de 10px ao menu */
+}
+
+.menu li {
+  margin: 0 15px; /* Adiciona espaçamento de 15px nas laterais de cada item do menu */
+}
+
+.menu li a {
+  color: white; /* Define a cor do texto dos links como branca */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold; /* Define o texto dos links como negrito */
+}
+
+.menu li a:hover {
+  color: #f57fe5; /* Muda a cor do texto do link ao passar o mouse para um rosa claro */
+}
+
+.menu ul {
+  list-style: none; /* Remove as bolinhas da lista suspensa */
+  padding: 0; /* Remove o padding padrão da lista suspensa */
+  margin: 0; /* Remove a margem padrão da lista suspensa */
+  display: none; /* Esconde a lista suspensa por padrão */
+  background-color: #f9f9f9; /* Define a cor de fundo da lista suspensa como um cinza claro */
+  min-width: 160px; /* Define uma largura mínima para a lista suspensa */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra à lista suspensa */
+}
+
+.menu ul li {
+  margin: 0; /* Remove a margem dos itens da lista suspensa */
+}
+
+.menu ul li a {
+  display: block; /* Faz com que os links ocupem toda a largura do item da lista suspensa */
+  padding: 10px; /* Adiciona padding de 10px aos links da lista suspensa */
+  color: black; /* Define a cor do texto dos links da lista suspensa como preto */
+}
+
+.menu > li:hover ul {
+  display: block; /* Exibe a lista suspensa ao passar o mouse sobre o item do menu */
+}
+
+.menu ul li a:hover {
+  background-color: #ddd; /* Muda a cor de fundo do link na lista suspensa ao passar o mouse */
+}
